@@ -1,2 +1,4 @@
 # repos_pr1
-my_github_actions
+status: <br>
+<img src="https://github.com/reqinald14/repos_pr1/workflows/my_github_actions/barge.svg?branch=main"><br>
+reginka
