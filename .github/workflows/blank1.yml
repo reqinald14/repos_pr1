@@ -46,7 +46,16 @@ jobs:
   my_testing2:
      runs-on: ubuntu-latest
      needs: [my_testing]
+     env:
+        VAR1: "this var1"
+        VAR2: "This var2"
      steps: 
       - name: second
-        run:  echo Hello, world2!
+        run:  echo "$LOCAL_VAR"
      
+      - name: third
+        run:  echo "1= ${{ env.VAR1 }}"
+        
+        env:
+          LOCAL_VAR: " this local"
+          
