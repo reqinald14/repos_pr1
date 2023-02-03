@@ -35,7 +35,7 @@ jobs:
           echo "Hi 2 ${{ env.APP_NAME }}"
           echo "Hi 3 ${{ env.PKG_NAME }}"
       - name: git clone repo
-        uses: action/checkout@v1
+        uses: actions/checkout@v1
       - name: list current folder
         run: ls -la 
       - name: test pkgs
