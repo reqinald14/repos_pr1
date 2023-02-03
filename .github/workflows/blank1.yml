@@ -41,7 +41,7 @@ jobs:
       - name: test pkgs
         run: ansible --version
       - name: zzzzip
-        run: zip
+        run: zip --version
        
   my_testing2:
      runs-on: ubuntu-latest
