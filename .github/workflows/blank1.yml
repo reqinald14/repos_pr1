@@ -3,7 +3,7 @@
 name: my github action
 env: 
    APP_NAME: "MY_tst" 
-   PKG_NAME: "deploy_smth_ver-${{ gitghub.sha }}"
+   PKG_NAME: "deploy_smth_ver-${{ github.sha }}"
    
 # Controls when the workflow will run
 on:
