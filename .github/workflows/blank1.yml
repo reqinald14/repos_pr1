@@ -51,11 +51,10 @@ jobs:
         VAR2: "This var2"
      steps: 
       - name: second
-        run:  echo "$LOCAL_VAR"
+        run:  echo "1= ${{ env.VAR1 }}"
      
       - name: third
-        run:  echo "1= ${{ env.VAR1 }}"
-        
+        run:  echo "$LOCAL_VAR"
         env:
           LOCAL_VAR: " this local"
           
