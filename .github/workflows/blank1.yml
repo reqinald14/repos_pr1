@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: my github action
+name: my_github_actions
 env: 
    APP_NAME: "MY_tst" 
    PKG_NAME: "deploy_smth_ver-${{ github.sha }}"
